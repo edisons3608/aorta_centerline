@@ -3,7 +3,7 @@
 % 6/22/2025
 
 %% Loading specific nifti file. Extracting metadata.
-nii      = niftiinfo('/Users/edisonsun/Documents/CTA Datastore/All_NU_Testing/standardized_141_resampled_cropped_CTM_standardized.nii');
+nii      = niftiinfo('path');
 vol      = niftiread(nii);
 mask     = vol > 0;                       % binary aorta mask
 voxelSz  = nii.PixelDimensions;           % [dx, dy, dz] in mm
